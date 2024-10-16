@@ -1,0 +1,88 @@
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontWeight": 400,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.largeFileOptimizations": false,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.7,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.unicodeHighlight.includeStrings": false,
+    "editor.linkedEditing": true,
+    "files.autoSaveDelay": 300,
+    "files.autoSave": "afterDelay",
+    "terminal.external.linuxExec": "xterm-256color",
+    "terminal.integrated.fontFamily": "MesloLGL NF",
+    "terminal.integrated.shellIntegration.history": 0,
+    "css.format.braceStyle": "expand",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.linkedEditing"
+    ],
+    "window.commandCenter": false,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "compact",
+    "explorer.expandSingleFolderWorkspaces": false,
+    "task.quickOpen.history": 10,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "jade"
+    },
+    // PYTHON
+    "[python]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnType": true
+    },
+    // GOLANG
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.inlayHints.assignVariableTypes": true,
+    "go.inlayHints.rangeVariableTypes": true,
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    // RUST
+    "rust-analyzer.check.command": "clippy",
+    // CSS HTML JS
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

@@ -1,0 +1,15 @@
+PKief.material-icon-theme
+chadalen.vscode-jetbrains-icon-theme
+jdinhlife.gruvbox
+alexcvzz.vscode-sqlite
+rust-lang.rust-analyzer
+SeyyedKhandon.firacode
+fill-labs.dependi
+tamasfe.even-better-toml
+redhat.vscode-yaml
+redhat.vscode-xml
+vscjava.vscode-java-pack
+vmware.vscode-boot-dev-pack
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+NomicFoundation.hardhat-solidity
