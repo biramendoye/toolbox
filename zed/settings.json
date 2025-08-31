@@ -1,0 +1,110 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "context_servers": {
+    "some-mcp-server": {
+      "source": "custom",
+      "enabled": true,
+      "command": "",
+      "args": [],
+      "env": {}
+    }
+  },
+
+  // UI
+  "icon_theme": "Material Icon Theme",
+  "project_panel": { "dock": "right" },
+  "outline_panel": { "dock": "right" },
+  "chat_panel": { "dock": "left" },
+  "collaboration_panel": { "dock": "left" },
+  "notification_panel": { "dock": "left" },
+  "theme": "GitHub Dark Default",
+  "ui_font_size": 16,
+  "buffer_font_size": 18.0,
+  "relative_line_numbers": true,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_features": { "cv01": 7 },
+  "tab_bar": { "show": true, "show_nav_history_buttons": false },
+  "tabs": { "file_icons": true, "git_status": true },
+  "preview_tabs": { "enabled": false },
+  "scrollbar": { "show": "never" },
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font Mono",
+    "env": { "EDITOR": "zed --wait" }
+  },
+  "file_finder": { "modal_max_width": "medium" },
+
+  // CODE
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "features": { "edit_prediction_provider": "zed" },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "inlay_hints": { "enabled": true },
+  "wrap_guides": [90],
+  "autosave": {
+    "after_delay": { "milliseconds": 1000 }
+  },
+
+  // GIT
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": { "enabled": true }
+  },
+
+  "languages": {
+    "TypeScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server",
+      "inlay_hints": {
+        "enabled": true,
+        "show_parameter_hints": false
+      }
+    },
+    "Rust": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    }
+  },
+
+  // LSP
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": { "enable": true, "command": "clippy" },
+        "rustfmt": { "extra_args": ["--edition=2024"] },
+        "cargo": {
+          "buildScripts": { "enable": true }
+        },
+        "procMacro": { "enable": true }
+      }
+    }
+  },
+
+  // AI
+  "edit_predictions": { "mode": "subtle" },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    },
+    "default_model": {
+      "model": "claude-sonnet-4",
+      "provider": "zed.dev"
+    }
+  }
+}
